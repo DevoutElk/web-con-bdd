@@ -46,14 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <div class="container">
 
-  <div class="header">
-    <div class="header-left">
-      <h1>Gestión de registros</h1>
-      <span class="badge">MariaDB conectado</span>
-    </div>
-    <div class="server-tag">Servidor: <?= htmlspecialchars($servidor) ?></div>
-    <button id="themeToggle" class="theme-btn" type="button">🌙</button>
+<div class="header">
+  <div class="header-left">
+    <h1>Gestión de registros</h1>
+    <span class="badge">MariaDB conectado</span>
   </div>
+
+  <div class="header-right">
+    <div class="server-tag">
+      Servidor: <?= htmlspecialchars($servidor) ?>
+    </div>
+
+<button id="themeToggle" class="theme-btn" type="button">🌙</button>
+</div>
 
   <div class="stats">
     <div class="stat">
