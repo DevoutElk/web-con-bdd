@@ -262,3 +262,95 @@ tr:hover td { background: #fafafa; }
   .grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr; }
 }
+
+/* HEADER RIGHT */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* THEME BUTTON */
+.theme-btn {
+  border: 1px solid #dde0e7;
+  background: #fff;
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.theme-btn:hover {
+  background: #f4f5f7;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark .header,
+body.dark .card,
+body.dark .stat {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+body.dark .server-tag {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark .stat-value,
+body.dark td,
+body.dark th,
+body.dark label {
+  color: #e5e7eb;
+}
+
+body.dark .muted,
+body.dark .stat-label {
+  color: #94a3b8;
+}
+
+body.dark input,
+body.dark select {
+  background: #1e293b;
+  border-color: #334155;
+  color: #fff;
+}
+
+body.dark input:focus,
+body.dark select:focus {
+  background: #0f172a;
+}
+
+body.dark table tr:hover td {
+  background: #172033;
+}
+
+body.dark .btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #fff;
+}
+
+body.dark .btn:hover {
+  background: #273449;
+}
+
+body.dark .theme-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #fff;
+}
+
+body.dark .theme-btn:hover {
+  background: #273449;
+}
+
