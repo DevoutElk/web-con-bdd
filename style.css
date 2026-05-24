@@ -267,7 +267,7 @@ tr:hover td { background: #fafafa; }
 .header-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 /* THEME BUTTON */
