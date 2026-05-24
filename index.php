@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="server-tag">
       Servidor: <?= htmlspecialchars($servidor) ?>
     </div>
+  </div>
 
 <button id="themeToggle" class="theme-btn" type="button">🌙</button>
 </div>
