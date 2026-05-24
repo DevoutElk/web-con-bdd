@@ -22,6 +22,7 @@ $servidor  = gethostname();
       <span class="badge">MariaDB conectado</span>
     </div>
     <div class="server-tag">Servidor: <?= htmlspecialchars($servidor) ?></div>
+    <button id="themeToggle" class="theme-btn" type="button">🌙</button>
   </div>
 
   <div class="stats">
