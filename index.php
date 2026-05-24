@@ -52,11 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
     <span class="badge">MariaDB conectado</span>
   </div>
 
-  <div class="header-right">
-    <div class="server-tag">
-      Servidor: <?= htmlspecialchars($servidor) ?>
-    </div>
-  </div>
+<div class="header-right">
+  <span class="server-tag">Servidor: <?= htmlspecialchars($servidor) ?></span>
+  <button id="themeToggle" class="theme-btn">🌙</button>
+</div>
 
 <button id="themeToggle" class="theme-btn" type="button">🌙</button>
 </div>
