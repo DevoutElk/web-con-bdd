@@ -12,6 +12,36 @@ $servidor  = gethostname();
   <title>Gestión de registros</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const toggleBtn = document.getElementById("themeToggle");
+
+  if (!toggleBtn) {
+    console.error("No se encontró el botón themeToggle");
+    return;
+  }
+
+  // aplicar tema guardado
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+  });
+
+});
+</script>
+  
 <body>
 
 <div class="container">
