@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   <span class="server-tag">Servidor: <?= htmlspecialchars($servidor) ?></span>
   <button id="themeToggle" class="theme-btn">🌙</button>
 </div>
+</div>
   <div class="stats">
     <div class="stat">
       <div class="stat-label">Total registros</div>
